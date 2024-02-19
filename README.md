@@ -1,4 +1,6 @@
 # MiniProjetoJavaScript
- Compra De Produtos
+ Programa feito em JavaScript que simula a compra de produtos em:
+ 
+ https://petersonfernandocouto.github.io/MiniProjetoJavaScript/
 
-<h1>Projeto em Construção.</h1>
+
