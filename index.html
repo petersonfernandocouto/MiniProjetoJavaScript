@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <title>Mini Projeto JS</title>
 </head>
 <body>
@@ -32,21 +35,21 @@
         <div class="ProductADD">
 
             <h3>Produtos</h3>
-            <input type="text" placeholder="Nome Do Produto">
+            <input id="NamePro" type="text" placeholder="Nome Do Produto">
             
         </div>   
 
         <div class="ProductADD">
 
             <h3>Valor</h3>
-            <input type="number" placeholder="R$: 00,00">
+            <input id="valorPro" type="number" placeholder="R$: 00,00">
             
         </div> 
 
         <div class="stylebutton">
             
-            <button>ADCIONAR</button>
-            <button>DELETAR</button>
+            <button onclick="produto.ADC()">ADCIONAR</button>
+            <button onclick="produto.Cancelar()">DELETAR</button>
 
         </div>
 
@@ -56,25 +59,20 @@
 
     <div class="Checking">
 
-        <div>
-            <h2 class="TextItens">Id</h2>
-            <h3>1</h3>
-        </div>
+        <table>
 
-        <div>
-            <h2 class="TextItens">Produto</h2>
-            <h3>Iphone 15</h3>
-        </div>
+           <thead class="TextItens"> 
+                <th>ID</th>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Remove</th>
+            </thead>
 
-        <div>
-            <h2 class="TextItens">Valor</h2>
-            <h3>8.000</h3>
-        </div>
+            <tbody id="tbody">
+                
+            </tbody>
 
-        <div>
-            <h2 class="TextItens">Deletar</h2>
-            <h3>icon</h3>
-        </div>
+        </table>
 
 
 
